@@ -11,7 +11,9 @@ pool:
 
 steps:
 - script: echo Hello, world!
-  displayName: 'Run a one-line script'
+    npm install
+    npm run build
+  displayName: 'Run a one-line scriptd and npm install and build'
 
 - script: |
     echo Add other tasks to build, test, and deploy your project.
