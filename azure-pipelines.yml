@@ -13,6 +13,7 @@ steps:
 - script: echo Hello, world!
     npm install
     npm run build
+    Compress-Archive -Path * -DestinationPath test.zip
   displayName: 'Run a one-line scriptd and npm install and build'
 
 - script: |
